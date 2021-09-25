@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Picker API Demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#3f51b5">
+  </head>  
+  <body>
+    <h1>
+      Contact Picker API Demo
+    </h1>
+
+    <p>Android M 以上透過網頁和通訊錄互動</p>
+
+    <ol>
+      <li>
+        <input type="checkbox" id="multiple" />
+        <label for="multiple">多筆?</label>
+      </li>
+      <li>
+        <input type="checkbox" id="name" disabled />
+        <label for="name">選擇欄位 name?</label>
+      </li>
+      <li>
+        <input type="checkbox" id="email" disabled />
+        <label for="email">選擇欄位 email addresses?</label>
+      </li>
+      <li>
+        <input type="checkbox" id="tel" disabled />
+        <label for="tel">選擇欄位 telephone numbers?</label>
+      </li>
+      <li>
+        <input type="checkbox" id="address" disabled />
+        <label for="address">選擇欄位 addresses? (Chrome 84+)</label>
+      </li>
+      <li>
+        <input type="checkbox" id="icon" disabled />
+        <label for="icons">選擇欄位 icons? (Chrome 84+)</label>
+      </li>
+    </ol>
+    
+    <p>
+      <button id="butRequest" type="button" disabled>
+        開啟通訊錄選擇器
+      </button>
+    </p>
+    
+    <p>
+      <b>結果</b>
+    </p>
+    <ul id="results">
+      <li>選擇的聯絡人</li>
+    </ul>
+    <pre id="rawResults">
+    </pre>
+
+    <script src="./demo.js"></script>
+
+  </body>
+</html>
